@@ -1,0 +1,11 @@
+C:\Users\anyel\OneDrive\Documentos\ProgramacionBajoweb\1ParcialWEB\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+C:\Users\anyel\OneDrive\Documentos\ProgramacionBajoweb\1ParcialWEB\Datos\bin\Debug\netstandard2.1\Datos.dll
+C:\Users\anyel\OneDrive\Documentos\ProgramacionBajoweb\1ParcialWEB\Datos\bin\Debug\netstandard2.1\Datos.pdb
+C:\Users\anyel\OneDrive\Documentos\ProgramacionBajoweb\1ParcialWEB\Datos\bin\Debug\netstandard2.1\Entity.dll
+C:\Users\anyel\OneDrive\Documentos\ProgramacionBajoweb\1ParcialWEB\Datos\bin\Debug\netstandard2.1\Entity.pdb
+C:\Users\anyel\OneDrive\Documentos\ProgramacionBajoweb\1ParcialWEB\Datos\obj\Debug\netstandard2.1\Datos.csprojAssemblyReference.cache
+C:\Users\anyel\OneDrive\Documentos\ProgramacionBajoweb\1ParcialWEB\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+C:\Users\anyel\OneDrive\Documentos\ProgramacionBajoweb\1ParcialWEB\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+C:\Users\anyel\OneDrive\Documentos\ProgramacionBajoweb\1ParcialWEB\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+C:\Users\anyel\OneDrive\Documentos\ProgramacionBajoweb\1ParcialWEB\Datos\obj\Debug\netstandard2.1\Datos.dll
+C:\Users\anyel\OneDrive\Documentos\ProgramacionBajoweb\1ParcialWEB\Datos\obj\Debug\netstandard2.1\Datos.pdb
