@@ -12,7 +12,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { PersonaConsultaComponent } from './ApoyoEconomico/persona-consulta/persona-consulta.component';
 import { PersonaRegistroComponent } from './ApoyoEconomico/persona-registro/persona-registro.component';
 import { AppRoutingModule } from './app-routing.module';
-import { PersonaService } from './services/persona.service';
+import { ApoyoService } from './services/apoyo.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { PersonaService } from './services/persona.service';
     ]),
     AppRoutingModule
   ],
-  providers: [PersonaService],
+  providers: [ApoyoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,9 +4,4 @@ export class Persona {
     apellidos:string;
     sexo: string;
     edad: number;
-    departamento: string;
-    ciudad: string;
-    valorApoyo: number;
-    modalidad: string;
-    fecha: Date;
 }

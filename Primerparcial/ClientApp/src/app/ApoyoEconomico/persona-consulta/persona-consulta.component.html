@@ -6,7 +6,7 @@
       <hr>
 
     <div id="TablaContainer">
-         <table class="table table-striped" *ngIf='personas && personas.length'>
+         <table class="table table-striped" *ngIf='apoyos && apoyos.length'>
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -23,18 +23,18 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr *ngFor="let persona of personas; index as i ">
+                      <tr *ngFor="let apoyo of apoyos; index as i ">
                         <th scope="row">{{ i + 1 }}</th>
-                        <td>{{ persona.identificacion }} </td>
-                        <td>{{ persona.nombres }}</td>
-                        <td>{{ persona.apellidos }}</td>
-                        <td>{{persona.sexo  }}</td>
-                        <td>{{ persona.edad  }}</td>
-                        <td>{{ persona.departamento}}</td>
-                        <td>{{ persona.ciudad}}</td>
-                        <td>{{ persona.valorApoyo}}</td>
-                        <td>{{ persona.modalidad}}</td>
-                        <td>{{ persona.fecha}}</td>
+                        <td>{{ apoyo.persona.identificacion }} </td>
+                        <td>{{ apoyo.persona.nombres }}</td>
+                        <td>{{ apoyo.persona.apellidos }}</td>
+                        <td>{{apoyo.persona.sexo  }}</td>
+                        <td>{{ apoyo.persona.edad  }}</td>
+                        <td>{{ apoyo.departamento}}</td>
+                        <td>{{ apoyo.ciudad}}</td>
+                        <td>{{ apoyo.valorApoyo}}</td>
+                        <td>{{ apoyo.modalidad}}</td>
+                        <td>{{ apoyo.fecha}}</td>
                       </tr>
                     </tbody>
                   </table>
@@ -43,7 +43,7 @@
       
                <div class="form-group">
                   <label>Total</label>
-                  <input type="number"  name="total" [(ngModel)]="personaTotal"  class="form-control" placeholder="calcular"/>
+                  <input type="number"  name="total" [(ngModel)]="apoyoTotal"  class="form-control" placeholder="calcular"/>
              </div>
 
     

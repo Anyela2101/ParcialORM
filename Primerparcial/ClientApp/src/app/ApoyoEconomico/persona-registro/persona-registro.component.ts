@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PersonaService } from './../../services/persona.service';
-import { Persona } from './../models/persona';
+import { Apoyo } from '../models/apoyo';
+import { ApoyoService } from './../../services/apoyo.service';
 
 @Component({
   selector: 'app-persona-registro',
@@ -8,18 +8,18 @@ import { Persona } from './../models/persona';
   styleUrls: ['./persona-registro.component.css']
 })
 export class PersonaRegistroComponent implements OnInit {
-  persona:Persona;
-  constructor(private personaService: PersonaService) { }
+  apoyo:Apoyo;
+  constructor(private apoyoService: ApoyoService) { }
 
   ngOnInit(): void {
-    this.persona = new Persona;
+    this.apoyo = new Apoyo();
   }
 
   add(){
-    this.personaService.post(this.persona).subscribe(p => {
-      if (p != null) {
+    this.apoyoService.post(this.apoyo).subscribe(a => {
+      if (a != null) {
         alert('Persona creada!');
-        this.persona = p;
+        this.apoyo = a;
       }
     });
     

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Persona} from '../models/persona';
-import {PersonaService} from 'src/app/services/persona.service';
+import {Apoyo} from '../models/apoyo';
+import {ApoyoService} from 'src/app/services/apoyo.service';
 
 @Component({
   selector: 'app-persona-consulta',
@@ -8,26 +9,28 @@ import {PersonaService} from 'src/app/services/persona.service';
   styleUrls: ['./persona-consulta.component.css']
 })
 export class PersonaConsultaComponent implements OnInit {
-  personas:Persona[]=[];
-  personaTotal:number=0;
+  
+  apoyos:Apoyo[]=[];
+  apoyoTotal:number=0;
   searchText: string;
-  constructor(private personaService: PersonaService) { }
+  constructor(private apoyoService: ApoyoService) { }
 
   ngOnInit(): void {
     this.get();
     this.calcular();
   }
   get(){
-    this.personaService.get().subscribe(result => {
-      this.personas = result;
+    this.apoyoService.get().subscribe(result => {
+      this.apoyos = result;
     });
+    console.log(this.apoyos);
   }
   calcular(){
     var sumador=0;
-        this.personas.forEach(element => {
-            sumador = sumador + element.valorApoyo;
+        this.apoyos.forEach(element => {
+           sumador = sumador + element.valorApoyo;
       });
-        this.personaTotal = sumador;
+        this.apoyoTotal = sumador;
   }
   
 }
